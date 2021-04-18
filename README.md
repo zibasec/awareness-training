@@ -4,9 +4,11 @@
 
 ## How to access the content?
 
-We publish the [latest releases on GitHub](https://github.com/zibasec/OpenAwarenessTraining/releases) in every supported output format. Additionally, a website (GitHub/repo hosted) with the latest version of the content is also available.
+We publish the [latest releases on GitHub](https://github.com/OpenAwarenessTraining/OpenAwarenessTraining/releases) in every supported output format. Additionally, a website (GitHub/repo hosted) with the latest version of the content is also available.
 
 ## How to contribute?
+
+We welcome every class of contribution. Is there content you think could be added, changed, improved, corrected, etc? Then we welcome the feedback via a [GitHub Issues](https://github.com/OpenAwarenessTraining/OpenAwarenessTraining/issues)
 
 ## License
 

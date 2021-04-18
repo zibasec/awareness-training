@@ -80,7 +80,7 @@ function errexitoff
 ## Globals
 FULLTAG=${FULLTAG:-registry.gitlab.com/goozbach-ziba/zost}
 COMMAND=''
-
+echo "FULLTAG => ${FULLTAG}"
 if command -v buildah &>/dev/null
 then
   COMMAND=buildah

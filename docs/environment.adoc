@@ -18,7 +18,7 @@ To build and push the container to a registry you have push access to:
 
 [source,bash]
 ----
-export FULLTAG=registry.example.com/user/zost
+export FULLTAG=ghcr.io/openawarenesstraining/openawarenesstraining
 bin/buildenv
 ----
 
@@ -31,7 +31,7 @@ Here's how you start the environment and render the content:
 
 [source,bash]
 ----
-export FULLTAG=registry.example.com/user/OpenAT
+export FULLTAG=ghcr.io/openawarenesstraining/openawarenesstraining
 bin/runenv
 [root@73d277417335 source]# make
 <lots of output and course is rendered in output/ folder>
