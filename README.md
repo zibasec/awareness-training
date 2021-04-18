@@ -1,18 +1,22 @@
-# Open Awarness Training (openat.org)
+# ZibaSec's Awarness Training (learn.zibasec.com)
 
-[OpenAT](https://OpenAt.org) is an ambitious project, sponsored by ZibaSec, aimed at providing a community-vetted, open-source body of knowledge around the topic of Security Awareness Training. 
+This project aims to provide a vetted, open-source body of knowledge around the topic of Security Awareness Training. 
+
+We believe that security awareness training is vital for everyone and that there is a shared interest in spreading the knowledge of cybersecurity awareness with as little friction as possible. Currently, the best content is either gated behind vendors selling you a product (or certification) or scattered throughout random pockets of the internet. This project aims to provide another option that can be used by anyone and improved upon by anyone.
+
+From a single source of content, we're able to provide PDF, HTML, and SCORM content in order to facilitate distribution in the most ways possible. 
 
 ## How to access the content?
 
-We publish the [latest releases on GitHub](https://github.com/OpenAwarenessTraining/OpenAwarenessTraining/releases) in every supported output format. Additionally, a website (GitHub/repo hosted) with the latest version of the content is also available.
+We publish the latest content here.
 
 ## How to contribute?
 
-We welcome every class of contribution. Is there content you think could be added, changed, improved, corrected, etc? Then we welcome the feedback via a [GitHub Issues](https://github.com/OpenAwarenessTraining/OpenAwarenessTraining/issues) to bring it to the community's attention. For those that wish to contribute deeper, we also welcome pull requests.
+We welcome every class of contribution. Is there content you think could be added, changed, improved, corrected, etc? Then we welcome the feedback via a [GitHub Issues](https://github.com/zibasec/awareness-training/issues) to bring it to the community's attention. For those that wish to contribute deeper, we also welcome pull requests.
 
 ### Container Development Environment
 
-To help package the build environment for Open Awareness Training (OpenAT), we are leveraging containerization.
+To help package the build environment, we are leveraging containerization.
 
 #### Build dependencies
 
@@ -32,7 +36,7 @@ On the machine which will be running this container you need to have the followi
 To build and push the container to a registry you have push access to:
 
 ```bash
-export FULLTAG=ghcr.io/openawarenesstraining/openawarenesstraining
+export FULLTAG=ghcr.io/zibasec/awareness-training
 bin/buildimage
 ```
 
@@ -44,7 +48,7 @@ The makefile targets which build the courseware need to run *INSIDE* the contain
 Here's how you start the environment and render the content:
 
 ```
-export FULLTAG=ghcr.io/openawarenesstraining/openawarenesstraining
+export FULLTAG=ghcr.io/zibasec/awareness-training
 bin/runenv
 [root@73d277417335 source]# make
 <lots of output and course is rendered in output/ folder>
@@ -307,6 +311,9 @@ The top and bottom YAML delimiters (`---`)are required.
 ## License
 
 All software code is licensed under [Apache Version 2](./LICENSE) and all training content is licensed under [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](./LICENSE-CONTENT)
+
+
+## Get Project Updates
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
