@@ -1,4 +1,5 @@
-FROM registry.gitlab.com/goozbach-infra-containers/asciidoctor
+FROM --platform=linux/amd64 registry.gitlab.com/goozbach-infra-containers/asciidoctor
+
 LABEL org.opencontainers.image.source=https://github.com/openawarenesstraining/openawarenesstraining
 
 RUN dnf -y install ansible python3-pip

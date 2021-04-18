@@ -78,7 +78,7 @@ function errexitoff
 
 ### Script starts here
 ## Globals
-FULLTAG=${FULLTAG:-registry.gitlab.com/goozbach-ziba/zost}
+FULLTAG=${FULLTAG:-ghcr.io/openawarenesstraining/openawarenesstraining}
 COMMAND=''
 
 if command -v podman &>/dev/null
@@ -91,7 +91,7 @@ else
   echo "Unable to find container runner... Exiting"
   exit 1
 fi
-  
+
 # set the volume mouting flag
 if selinuxenabled
 then
