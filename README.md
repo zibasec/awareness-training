@@ -6,9 +6,45 @@ We believe that security awareness training is vital for everyone and that there
 
 From a single source of content, we're able to provide PDF, HTML, and SCORM content in order to facilitate distribution in the most ways possible. 
 
+## Table Of Contents
+
+<!-- TOC -->
+
+- [ZibaSec's Awarness Training (learn.zibasec.com)](#zibasecs-awarness-training-learnzibaseccom)
+  - [Table Of Contents](#table-of-contents)
+  - [How to access the content?](#how-to-access-the-content)
+  - [How to contribute?](#how-to-contribute)
+    - [Container Development Environment](#container-development-environment)
+      - [Build dependencies](#build-dependencies)
+      - [Building OpenAT Container](#building-openat-container)
+      - [Running the OpenAT Container](#running-the-openat-container)
+      - [Other Make targets](#other-make-targets)
+        - [Cleanup targets](#cleanup-targets)
+          - [Targets which should be ran inside the container:](#targets-which-should-be-ran-inside-the-container)
+          - [Targets which should be ran *OUTSIDE* the container](#targets-which-should-be-ran-outside-the-container)
+    - [How to create a new learning module](#how-to-create-a-new-learning-module)
+      - [Create a New Module Folder](#create-a-new-module-folder)
+      - [Add Content to Placeholder Files](#add-content-to-placeholder-files)
+        - [`index.yml`](#indexyml)
+        - [`my-new-module.adoc`](#my-new-moduleadoc)
+    - [Learning Module Style Guide](#learning-module-style-guide)
+      - [Content Examples](#content-examples)
+        - [One line per sentance](#one-line-per-sentance)
+        - [Use line breaks for paragraphs](#use-line-breaks-for-paragraphs)
+        - [Use AsciiDoc Admonition Blocks](#use-asciidoc-admonition-blocks)
+        - [Images go into a folder in each module named `images/`](#images-go-into-a-folder-in-each-module-named-images)
+        - [Create a `[.lead]` paragraph](#create-a-lead-paragraph)
+      - [Needed Files in a module](#needed-files-in-a-module)
+        - [`index.yml` file](#indexyml-file)
+        - [One or more asciidoc files](#one-or-more-asciidoc-files)
+  - [License](#license)
+  - [Get Project Updates](#get-project-updates)
+
+<!-- /TOC -->
+
 ## How to access the content?
 
-We publish the latest content here.
+We publish the latest content (here)[https://learn.zibasec.com/output]. This is the live-running version of the content that is (built and visible on GitHub)[https://github.com/zibasec/awareness-training/tree/master/output].
 
 ## How to contribute?
 
