@@ -16,8 +16,8 @@ From a single source of content, we're able to provide PDF, HTML, and SCORM cont
   - [How to contribute?](#how-to-contribute)
     - [Container Development Environment](#container-development-environment)
       - [Build dependencies](#build-dependencies)
-      - [Building OpenAT Container](#building-openat-container)
-      - [Running the OpenAT Container](#running-the-openat-container)
+      - [Building the Container](#building-the-container)
+      - [Running the container](#running-the-container)
       - [Other Make targets](#other-make-targets)
         - [Cleanup targets](#cleanup-targets)
           - [Targets which should be ran inside the container:](#targets-which-should-be-ran-inside-the-container)
@@ -44,7 +44,9 @@ From a single source of content, we're able to provide PDF, HTML, and SCORM cont
 
 ## How to access the content?
 
-We publish the latest content (here)[https://learn.zibasec.com/output]. This is the live-running version of the content that is (built and visible on GitHub)[https://github.com/zibasec/awareness-training/tree/master/output].
+We publish the latest content [here](https://learn.zibasec.com/output). This is where you'll be able to explore the different modules and download any relevant assets.
+
+This is the live-running version of the content that is [built and visible on GitHub](https://github.com/zibasec/awareness-training/tree/master/output).
 
 ## How to contribute?
 
@@ -67,7 +69,7 @@ On the machine which will be running this container you need to have the followi
 * Python3
 * GNU Make
 
-#### Building OpenAT Container
+#### Building the Container
 
 To build and push the container to a registry you have push access to:
 
@@ -78,7 +80,7 @@ bin/buildimage
 
 This builds the container locally and pushes a copy to the tag in `${FULLTAG}`.
 
-#### Running the OpenAT Container
+#### Running the container
 The makefile targets which build the courseware need to run *INSIDE* the container's context.
 
 Here's how you start the environment and render the content:

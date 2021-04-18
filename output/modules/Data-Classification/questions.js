@@ -1,6 +1,6 @@
 
 
-test.AddQuestion( new Question ("com.scorm.OpenAT.interactions.Data-Classification-and-Handling_1",
+test.AddQuestion( new Question ("com.scorm.ZibaSec.interactions.Data-Classification-and-Handling_1",
     "True or False: All data is created equal.", 
     QUESTION_TYPE_TF,
     null,
@@ -8,7 +8,7 @@ test.AddQuestion( new Question ("com.scorm.OpenAT.interactions.Data-Classificati
     "obj_Data-Classification-and-Handling")
     );      
 
-test.AddQuestion( new Question ("com.scorm.OpenAT.interactions.Data-Classification-and-Handling_2",
+test.AddQuestion( new Question ("com.scorm.ZibaSec.interactions.Data-Classification-and-Handling_2",
     "True or False: One should classify data based on the damage that could result if you lost control of it.", 
     QUESTION_TYPE_TF,
     null,
@@ -16,7 +16,7 @@ test.AddQuestion( new Question ("com.scorm.OpenAT.interactions.Data-Classificati
     "obj_Data-Classification-and-Handling")
     );      
 
-test.AddQuestion( new Question ("com.scorm.OpenAT.interactions.Data-Classification-and-Handling_3",
+test.AddQuestion( new Question ("com.scorm.ZibaSec.interactions.Data-Classification-and-Handling_3",
     "True or False: Overprotecting data can hurt the organization.", 
     QUESTION_TYPE_TF,
     null,
@@ -24,7 +24,7 @@ test.AddQuestion( new Question ("com.scorm.OpenAT.interactions.Data-Classificati
     "obj_Data-Classification-and-Handling")
     );      
 
-test.AddQuestion( new Question ("com.scorm.OpenAT.interactions.Data-Classification-and-Handling_4",
+test.AddQuestion( new Question ("com.scorm.ZibaSec.interactions.Data-Classification-and-Handling_4",
     "Which of the following is not a data classification level used by the U.S. Military?", 
     QUESTION_TYPE_CHOICE, 
     new Array("Sensitive","Confidential","Secret","Top Secret"),
