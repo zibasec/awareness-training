@@ -1,4 +1,4 @@
-= Creating a New ZOST Module
+= Creating a New OpenAT Module
 
 To create a new module for this framework follow these steps.
 
