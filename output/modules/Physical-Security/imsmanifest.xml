@@ -10,7 +10,7 @@ score and time. It also includes the addition of a basic "controller" for provid
 intra-SCO navigation.
 -->
 
-<manifest identifier="com.scorm.OpenAT.v0-0-1.Physical Security" version="v0.0.1"
+<manifest identifier="com.scorm.ZibaSec.v0-0-1.Physical Security" version="v0.0.1"
           xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
@@ -27,8 +27,8 @@ intra-SCO navigation.
     <schema>ADL SCORM</schema>
     <schemaversion>2004 3rd Edition</schemaversion>
   </metadata>
-  <organizations default="OpenAT">
-    <organization identifier="OpenAT" adlseq:objectivesGlobalToSystem="false">
+  <organizations default="ZibaSec">
+    <organization identifier="ZibaSec" adlseq:objectivesGlobalToSystem="false">
       <title>Physical Security</title>
       <item identifier="item_1" identifierref="resource_1">
         <title>Physical Security</title>
