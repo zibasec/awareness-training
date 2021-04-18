@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+## where does this script live?
+SOURCE="${BASH_SOURCE[0]}"
+TOPLEVEL="$( dirname "${SOURCE}" )"
+
+while [ -h "${SOURCE}" ]
+do 
+  SOURCE="$(readlink "${SOURCE}")"
+  [[ ${SOURCE} != /* ]] && SOURCE="${TOPLEVEL}/${SOURCE}"
+  TOPLEVEL="$( cd -P "$( dirname "${SOURCE}"  )" && pwd )"
+done
+TOPLEVEL="$( cd -P "$( dirname "${SOURCE}" )" && pwd )"
+
+# include helper script
+source ${TOPLEVEL}/makelib.sh
+
+echo "module_basedir: ${module_basedir}" | yq m -a /dev/stdin variables/global.yml ${module_basedir}/index.yml ${ayml_files[@]} | jinja2 --format yaml -o ${outputfile} templates/questions.html.j2 /dev/stdin || rm -f ${outputfile}

@@ -1,0 +1,85 @@
+---
+submodules:
+ - submodule_name: Email Mistakes
+   submodule_description: "Email Mistakes: Common Pitfalls"
+   submodule_version: "v0.0.1"
+   questions:
+   - prompt: "True or False: You should generally avoid clicking on links in email messages."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: true
+   - prompt: "True or False: Personal usage of Business accounts can jeopardize your privacy."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: true
+   - prompt: "True or False: You should double-check the recipients of an email before sending."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: true
+   - prompt: "Which of the following is not recommended for managing your email credentials?"
+     type: QUESTION_TYPE_CHOICE
+     choices:
+     - "Use a password manager to generate and store your credentials."
+     - "Reuse passwords from other accounts."
+     - "Use passphrases"
+     answer: "Reuse passwords from other accounts."
+
+---
+= Email Mistakes
+Email is one of the oldest and most commonly used communications services on the Internet.
+Nearly everyone uses email nearly every day.
+Like other parts of our lives, there are many ways to make mistakes while using email.
+
+== Weak and Reused Passwords
+While the reuse or use of weak passwords is always discouraged, these mistakes can prove particularly dangerous/problematic when it comes to email.
+The reason is that most online services allow you to reset your credentials (if you forgot or suspect that they are compromised) using email.
+A compromised email account places almost all of your online accounts at risk.
+
+Recommendations:
+
+* Use a password manager to generate and store unique credentials
+* Do not reuse passwords (especially when it comes to email accounts)
+* Use passphrases for added security (length is the most crucial element of a secret's security)
+
+== Intermingling Work and Personal activities
+Using work email for personal use can compromise your privacy.
+Business accounts are frequently monitored (or at least subject to inspection), which means your personal affairs are no longer private.
+
+
+Depending on your business and jurisdiction, using personal accounts for organizational purposes could be illegal.
+Usually, in litigation, relevant email is discoverable, which means that you could have lawyers crawling through your personal email.
+To safeguard your privacy, avoid using personal accounts and equipment for business purposes.
+
+Think work and personal like church and state, keep them separate.
+
+== Sending Sensitive Information
+Without applying additional protections, email is more like a postcard than a sealed envelope.
+Anyone (and anything) that your email passes through (or is stored on) has an opportunity to read the contents.
+
+
+We will talk about some measures you can take to safeguard email in other modules, but understand that many of these measures are not commonly utilized or require both parties to support them.
+You should not send information such as government identification numbers, payment card data, personal financial or credit data via email.
+There may also be other types of data that are too sensitive to send over email.
+When in doubt, assume that email is insufficiently secure to send sensitive data.
+
+== Unintended Recipients
+Even though email is not secure enough to send sensitive data, you will frequently conduct such sensitive communications via email.
+Due to human error and autocompletion of email addresses, it is too easy to send an email to someone you didn't intend to.
+
+You should double-check the recipients before sending an email message (primarily if the content is for specific audiences).
+
+== Clicking on Links
+Clicking on links is a pattern of behavior we bring with us from browsing the web.
+The problem is that what you see in the email application may vary from where the link takes you.
+An intelligent attacker could cause some significant harm from you clicking on a link they've crafted.
+
+We recommend going to the website/service independently of the link.
+Even if it looks like it is coming from a legitimate account, it could be someone spoofing the origin email address or the sender has a compromised account.
+
+== General Guidance
+Pause and think before you act.
+
+Nothing is so important or urgent that you can't reach out to the sender via another communications channel to verify a request made via email.
+
+Double-check the receivers and content before sending a message.
+

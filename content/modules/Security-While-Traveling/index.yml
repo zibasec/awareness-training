@@ -1,0 +1,7 @@
+---
+module_name: Security-While-Traveling
+module_description: "Securing Yourself While Traveling"
+module_version: "v0.0.1"
+
+full_pages:
+  - secure-travel.adoc

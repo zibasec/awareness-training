@@ -1,0 +1,81 @@
+---
+submodules:
+ - submodule_name: Updates
+   submodule_description: "Updates: Staying Secure"
+   submodule_version: "v0.0.1"
+   questions:
+   - prompt: "True or False: Updates are mostly new features?"
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: false
+   - prompt: "True or False: You can delay updating your systems/devices without worrying?"
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: false
+   - prompt: "Which of the follow is not a reason for not updating?"
+     type: QUESTION_TYPE_CHOICE
+     choices:
+     - "Don't know there is an update available."
+     - "Fear an update may break functionality."
+     - "Updates aren't important."
+     - "Updates are no longer available/supported."
+     answer: "Updates aren't important."
+
+---
+
+= Updates
+[.lead]
+====
+Over time, mistakes and vulnerabilities are found in every system.
+To stay secure, most mature vendors will provide a way to update their products.
+====
+
+== Updates are Mostly for Security
+With few exceptions, most updates are to fix vulnerabilities in products and software.
+Even with the most rigorous controls and processes, software developers will make mistakes.
+It is only a matter of time before someone will find them.
+Once the manufacturers become aware of these vulnerabilities, they will frequently produce an update that fixes them.
+
+== Update Promptly
+After an update becomes available, attackers will learn about the vulnerabilities and develop 'exploits' (tools to attack) that target them.
+As time passes, it will become easier and less cumbersome to attack systems and services that have not been kept up to date.
+
+== Reasons for not Updating
+Most of the reasons people don't update their devices/systems are:
+
+* They don't know an update is available. 
+* They fear that an update may 'break' a device/system's functionality.
+
+* A provider no longer supports the device/system. 
+
+We will discuss what to do in each of these situations.
+
+== Don't Know an Update is Available
+Most software today will have the capacity to manually (or automatically) check for updates.
+
+Recommend that - as a minimum - you check for updates once a month.
+
+As much as possible, enable auto-updates on as many of your devices and systems.
+
+== Fear That an Update Will Break Functionality
+Most devices/services have a way for you to backup the currently running version of their software.
+
+Learn how to leverage the functionality to restore the system if something (like an update) renders it unusable. You can update with confidence because you know you can always fall back to something that works.
+
+== Updates No Longer Available/Unsupported
+
+Vendors don't support their products indefinitely.
+
+When you purchase/acquire a product, you should make a special note of its end-of-life date and plan to replace it before that date.
+
+If you can't replace something before it's end-of-life, then you should take measures to reduce the risks associated with continuing to use it.
+For example: Take it off the network.
+
+== Critical Updates
+Occasionally, vendors will announce a critical update.
+These are usually to resolve a vulnerability that is currently being attacked or is particularly easy/impactful.
+
+Whenever you become aware of a critical update, you should immediately update it to minimize risk.
+
+
+

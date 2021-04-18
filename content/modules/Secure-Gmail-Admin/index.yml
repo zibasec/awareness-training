@@ -1,0 +1,7 @@
+---
+module_name: Secure-Gmail-Admin
+module_description: "Tour of security settings for a Gmail admin"
+module_version: "v0.0.1"
+
+full_pages:
+  - secure-gmail-admin.adoc

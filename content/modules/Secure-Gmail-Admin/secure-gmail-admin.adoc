@@ -1,0 +1,141 @@
+---
+submodules:
+ - submodule_name: Secure-Gmail-Administration
+   submodule_description: "Gmail Admin Security Settings"
+   submodule_version: "v0.0.1"
+   questions: []
+
+---
+
+= Security Settings in your Google Admin Interface
+[.lead]
+====
+If you use Google's infrastructure to run your company's email infrastructure, you should be aware of some additional security options.
+====
+
+== Adding New Users
+The interface for adding a new user looks a little different.
+
+Click the "Users" button in the admin interface.
+
+image::images/Click_Users.png[]
+
+Click the "Add new user" button.
+
+image::images/Add_New_User.png[]
+
+image::images/Add_New_User_Form.png[]
+
+image::images/New_User_Added_Confirmation.png[]
+
+== Securing the Admin User Account
+It is imperative to secure the administration user of your Google account.
+
+It is a good idea to have a separate user from the one you use day-to-day.
+
+This admin user should have a secure passphrase, two-factor authentication enabled,
+and should likely be enrolled in the Advanced Protection Program.
+
+image::images/Advance_Protection_Settings_View.png[]
+
+[IMPORTANT]
+.IMPORTANT: Secure your Admin Account
+====
+It is essential to secure your administrator account properly.
+====
+
+One setting that you can change on your super admin account is to disallow that account
+to recover its password.
+
+This means you need to have multiple super admin accounts (preferably owned/managed 
+by separate people), so that another super admin account can unlock the other.
+
+You can also restrict regular users from recovering their accounts, thus needing
+and admin to unlock and reset the password.
+
+image::images/Security_Account_Recovery.png[]
+
+== Default Security Settings
+To further secure your organization's account, you can enable specific security settings.
+
+=== Enable or Disable Features
+You can enable and disable features of the Google platform on a user by user, group,
+or organizational unit.
+
+* Calendar
+* Drive
+** Offline Docs
+** Publish on the web
+** Sharing settings
+* Mail
+** Approved domain senders
+** Automatic email forwarding
+** Attachment safety.
+
+These are just a few of the possible options you can enable or disable in your account.
+
+image::images/Security_Health.png[]
+
+=== Password and Login Settings
+Password and login policies are a typical setting you can also find in your Google account.
+
+You can force strong passwords, disable password re-use, and cause password resets on a regular schedule.
+
+image::images/Security_Password_Management.png[]
+
+You can force a session to expire after a set amount of time.
+
+image::images/Security_Session_Control.png[]
+
+You can enforce that accounts have two-factor auth enabled.
+
+image::images/Security_Settings_Page_with_2FA_option_visible.png[]
+
+image::images/2FA_Settings.png[]
+
+You can disable access from "Less Secure Apps," such as third-party clients that don't meet Google's security standards.
+
+image::images/Security_Less_Secure_Apps.png[]
+
+You can enable "Login challenges", which will do extended verification (such as employee ID) 
+if the login seems suspicious.
+
+image::images/Security_Login_Challenges.png[]
+
+=== Context Aware Access
+Advanced context-aware access rules are also an option.
+
+You can set up rules that, when matched, require additional security.
+
+First, you set access levels; tied to accounts/OUs or groups.
+
+Then an access level is configured with one or more rules.
+
+For example, if you wanted to create an access level `1` which limits logins to IP
+addresses from the US only.
+
+image::images/Security_Context_Aware_Access.png[]
+
+image::images/Security_Context_Aware_Access_Access_Levels.png[]
+
+image::images/Security_Context_Aware_Access_Access_Levels_USA.png[]
+
+== Advanced Rules
+If the above settings don't cover your needs, you can also define more advanced specific
+rules.
+
+This page is where you can also tie in audit events to warn about security issues.
+
+image::images/Security_Rules.png[]
+
+== Data Protection
+Google will monitor the data in your account and generate a report on what types of
+data are there, and how much of each type has been shared.
+
+image::images/Security_Data_Protection.png[]
+
+== Monitoring Dashboard
+There is also a monitoring dashboard with some important metrics.
+
+image::images/Security_Dashboard.png[]
+

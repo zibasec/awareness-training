@@ -1,0 +1,76 @@
+---
+submodules:
+- submodule_name: Social engineering 101
+  submodule_description: "Social engineering 101: Basics of Social Engineering."
+  submodule_version: "v0.0.1"
+  questions:
+  - prompt: "Social Engineering is not very common."
+    type: QUESTION_TYPE_TF
+    choices: null
+    answer: false
+  - prompt: "Which of the following concepts is best described by 'following someone into a secure area'?"
+    type: QUESTION_TYPE_CHOICE
+    choices:
+    - "Tailgating"
+    - "Smishing"
+    - "Baiting"
+    answer: "Tailgating"
+  - prompt: "True or False: You should plug in a USB thumb drive you found in the parking lot."
+    type: QUESTION_TYPE_TF
+    choices: null
+    answer: false
+---
+
+= Social Engineering
+Social Engineering is tricking people into revealing information they usually wouldn't.
+
+Social Engineering is one of the more common attacks your company faces.
+A social engineering component often accompanies most other types of attacks and vulnerabilities.
+
+.Social Engineering Defined
+[[socengdef]]
+[quote, www.social-engineer.org -- Social Engineering Defined ]
+____
+Any act that influences a person to take any action that may or may not be in their best interest .footnote:[https://www.social-engineer.org/framework/general-discussion/social-engineering-defined/]
+____
+
+== Social Engineering -- Methods
+
+Social engineering comes through a few different vectors:
+
+Vishing:: aka "Voice Phishing"
+Vishing is using Social engineering over the telephone system.
+This method is used as an attack by purporting to be a bank or other organization that the target does business with to directly steal information such as usernames, passwords, and account info.
+This method is also used to reconnoiter for other information in a multi-stage attack.
+
+Phishing:: Using electronic communications such as email or websites to gather private or secure information.
+Phishing email scams send links to authentic-looking fraudulent sites, which then gather your personal information (usernames, passwords, accounts, Card PINs).
+Often phishing attacks use a request to "verify" information and use "loss aversion" principles to ensure compliance.
+An example of this method would be the request to provide or verify a credit card number to continue using an online service.
+
+Smishing:: Using SMS text messages in a social engineering attack.
+
+Impersonation:: Pretending to be another person to gain access;
+including using another person's credentials to gain access to a location or system.
+
+== Other Social Engineering Concepts
+
+Tailgating:: following someone with access into a secured location.
+
+Pretexting:: Gaining trust from the target by sharing information about the victim.
+An attacker uses information gained through other avenues: "I have your last statement balance; can you give me your password?"
+
+Baiting:: Using malware-infected disks or thumb drives to gain access to systems.
+
+== Social Engineering "Red Flags."
+
+* An organization calling, texting, or emailing you and asking for credentials.
+* Someone in "distress" asking you to forgo security procedures. "If I don't get my password reset, we'll lose this account! You have to help me!"
+** This can be legitimate; take extra care to verify the identity of the requester.
+* Urgency conveyed in a non-urgent medium
+** A common trick is to send an SMS message asking someone to do a task such as send money or buy gift cards. This attacker often claims to be in an important meeting hence the request coming from a text message.
+* An offer seems "Too good to be true".
+* Email attachments you are not expecting.
+** Even if they claim to be from people you know.
+* A website where the security certificate does not match the domain.
+

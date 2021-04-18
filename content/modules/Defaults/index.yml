@@ -1,0 +1,7 @@
+---
+module_name: Defaults
+module_description: "Defaults: Understanding and Managing Defaults"
+module_version: "v0.0.1"
+
+full_pages:
+  - defaults.adoc

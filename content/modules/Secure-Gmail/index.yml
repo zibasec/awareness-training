@@ -1,0 +1,7 @@
+---
+module_name: Secure-Gmail
+module_description: "Securing a gmail.com Email Account"
+module_version: "v0.0.1"
+
+full_pages:
+  - secure-gmail.adoc

@@ -1,0 +1,62 @@
+= Creating a New ZOST Module
+
+To create a new module for this framework follow these steps.
+
+== Create a New Module Folder
+
+First step is to create a new folder to contain your new module.
+This folder should be named after your module using dashes `-` not spaces.
+
+We're also going to create an `images/` folder just in case.
+And put some placeholder files in place.
+
+[source,bash]
+----
+mkdir -p content/modules/My-New-Module/images
+touch content/modules/My-New-Module/images/.gitkeep
+touch content/modules/My-New-Module/index.yml
+touch content/modules/My-New-Module/my-new-module.adoc
+----
+
+== Add Content to Placeholder Files
+
+=== `index.yml`
+The contents of the `index.yml` file should look like this:
+
+[source,yaml]
+----
+---
+module_name: My-New-Module
+module_description: "The newest module"
+module_version: "v0.0.1"
+
+full_pages:
+  - my-new-module.adoc
+
+----
+
+=== `my-new-module.adoc`
+
+The contents of the `my-new-module.adoc` file should look like this:
+
+[source,asciidoc]
+----
+---
+submodules:
+ - submodule_name: My-New-Module
+   submodule_description: "New module, the newest"
+   submodule_version: "v0.0.1"
+   questions: []
+
+---
+
+= New Module
+[.lead]
+====
+This is the lead paragraph for our new module, it sets the expectation for the rest of things.
+====
+
+== Sub-header
+Sub content
+----
+

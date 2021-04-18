@@ -1,0 +1,7 @@
+---
+module_name: High-Value-Targets
+module_description: "Protecting High-Value Targets in Your Organization"
+module_version: "v0.0.1"
+
+full_pages:
+  - high-value-targets.adoc

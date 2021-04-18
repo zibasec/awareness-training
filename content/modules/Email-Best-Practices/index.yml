@@ -1,0 +1,7 @@
+---
+module_name: Email Best Practices
+module_description: "Email: Best Practices "
+module_version: "v0.0.1"
+
+full_pages:
+  - email-best-practices.adoc

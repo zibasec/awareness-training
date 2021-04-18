@@ -1,0 +1,7 @@
+---
+module_name: Mobile-Endpoint-Security
+module_description: "Mobile Security: Protecting that which goes with you"
+module_version: "v0.0.1"
+
+full_pages:
+  - mobile-security.adoc

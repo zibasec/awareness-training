@@ -1,0 +1,7 @@
+---
+module_name: Authentication
+module_description: "Authentication: Verifying Your Identity"
+module_version: "v0.0.1"
+
+full_pages:
+  - authentication.adoc

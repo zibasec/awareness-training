@@ -1,0 +1,7 @@
+---
+module_name: Email Mistakes
+module_description: "Email Mistakes: Common Pitfalls"
+module_version: "v0.0.1"
+
+full_pages:
+  - email-mistakes.adoc

@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+
+import frontmatter
+import fileinput
+import sys
+import yaml
+
+maindict = {}
+
+def merge_dicts(*dict_args):
+    """
+    Given any number of dictionaries, shallow copy and merge into a new dict,
+    precedence goes to key value pairs in latter dictionaries.
+    """
+    result = {}
+    for dictionary in dict_args:
+        result.update(dictionary)
+    return result
+
+if (sys.argv[1:]):
+    for argfile in sys.argv[1:]:
+        infile = open(argfile)
+        post = frontmatter.load(infile)
+        infile.close()
+        maindict = merge_dicts(maindict, post.metadata)
+else:
+    infile = sys.stdin
+    post = frontmatter.load(infile)
+    merge_dicts(maindict, post.metadata)
+
+
+print(yaml.dump(maindict))

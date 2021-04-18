@@ -1,0 +1,7 @@
+---
+module_name: Email Attacks
+module_description: "Email Attacks: Deception and Manipulation"
+module_version: "v0.0.1"
+
+full_pages:
+  - email-attacks.adoc

@@ -1,0 +1,165 @@
+---
+submodules:
+ - submodule_name: "Data Classification and Handling."
+   submodule_description: "Data Classification and Handling: Protecting and Using Data."
+   submodule_version: "v0.0.1"
+   questions:
+   - prompt: "True or False: All data is created equal."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: false
+   - prompt: "True or False: One should classify data based on the damage that could result if you lost control of it."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: true
+   - prompt: "True or False: Overprotecting data can hurt the organization."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: true
+   - prompt: "Which of the following is not a data classification level used by the U.S. Military?"
+     type: QUESTION_TYPE_CHOICE
+     choices:
+     - "Sensitive"
+     - "Confidential"
+     - "Secret"
+     - "Top Secret"
+     answer: "Sensitive"
+
+---
+
+= Data Classification and Handling: Protecting and Using Data
+[.lead]
+====
+Data has sometimes called 'the new oil' (the fuel for our modern economy/society), but it can also be dangerous if not adequately protected.
+Not all data is created equal.
+Some data types merit the greatest protections, and other types of data should be more generally available.
+Data classification and handling are all about categorizing the data appropriately and applying the proper controls.
+====
+
+== The Value and Danger of Data
+Having the right information available improves decision-making and allows for better allocation of resources.
+An organization that can obtain, enrich, and utilize data will have significant advantages over its competitors that can't.
+Data can be a strategic competitive advantage.
+It is impossible to conceive an organization of significant size that doesn't leverage data in its operations.
+
+Wherever there is the potential to do great good, there is also the potential to do great evil.
+The potential for significant damage exists if data is not adequately protected.
+Public embarrassment, fraud, theft, and other crimes come from the misuse of data.
+Usually, we are only concerned with protecting data confidentiality, but losing access to data could also have serious adverse effects.
+
+So the challenge is ensuring the appropriate use of data while safeguarding from abuse.
+
+== Not All Data is Created Equal
+Some data types, for example, payment card data, demand and deserve the application of significant protections to prevent fraud.
+Other data types should have some protections applied, but making this data more accessible is needed for business reasons (for example, business intelligence and financial reports).
+Still, other types of data should be generally available (they pose no serious risks and are beneficial to large groups (for example, weather forecasts).
+
+Protecting data can be expensive.
+Encrypting and decrypting data promptly requires significant resources.
+With some data, it is an appropriate safeguard.
+With other data is a waste of resources.
+Understanding your data and applying the right amount of protection is an essential process for most organizations.
+
+== Deciding How Much Protection is Appropriate
+There are two drivers for the protection of data, internal and external.
+
+Internal drivers for protecting data include: 
+
+* Risk management and opportunity costs associated with applying the protections.
+
+* If data loss would compromise an organization's competitive advantage, then more restrictive protections would be appropriate.
+
+* Sometimes, protecting data too much could interfere with the organization realizing its mission.
+  If this was the case, then some controls may work, while others would not.
+
+External drivers for protecting data include: 
+
+* Laws/regulations and contracts/relationships.
+
+* Regulatory requirements or contract obligations from a partner may dictate the types of safeguards one must use when protecting data.
+
+While you might negotiate with some partners, usually, most governments are not as malleable.
+It is essential to understand that compliance is the floor (not the ceiling).
+These requirements are the minimum.
+
+== How Many Classification Levels Should an Organization Have?
+The U.S. Military (who has a long history of needing to protect data) has three classification levels:
+
+* Confidential - damage
+* Secret - grave damage
+* Top Secret - exceptionally grave damage
+
+There is also an 'unclassified' category for data (used for data that doesn't require special protection).
+The amount of damage that unauthorized disclosure of data would cause defines the classification level.
+
+We recommend finding the right balance between appropriately protecting the data and overprotecting data.
+Too many data classification levels will confuse people.
+Too few will result in resources wasted and operations unnecessarily complicated.
+
+== Determining the Classification of Data
+Making data classification decisions every time someone collects or creates data is inefficient.
+Therefore, the recommendation is that data be classified when you decide to produce/consume it (upfront).
+This upfront classification enables all follow-on work and management associated with the data to be well understood and handled appropriately.
+
+[NOTE]
+.Data Classification Levels Should be Pre-Defined
+====
+As a general rule, average employees should not have to decide what the data's sensitivity is and how to handle it.
+They should only have to know which pre-defined sensitivity/classification a specific piece of data has.
+The policy will determine the pre-defined procedures for handling said data.
+====
+
+So this should be a one-time (or rare) process.
+The earlier one classifies a data type, the better (though later is better than never).
+Adding protections to data after you have accumulated it is more expensive (and onerous) than doing it from the start.
+
+== Classification Determines Handling
+Once data has a classification, it should be clear to everyone involved in using said data what the requirements are.
+Handling requirements include:
+
+* Marking the media and systems that process the data
+* Protections while the data is at rest (in storage), in transit (in motion), and during processing (in use).
+* Appropriate disposal of the data once it is no longer required
+* Duration for retaining the data
+* Who should have access to the data
+* Physical environment and system requirements for accessing the data
+
+== Data Classification is the Foundation for Information Security
+If you don't classify your data, it will become increasingly tricky to protect it appropriately.
+Information Security is about applying controls (protections) to your organization to enable its mission while adequately safeguarding it.
+Once you know what your data is worth (and how you want to protect it), then you can get to work (until then, you will waste a lot of time and energy and maybe still not adequately protect it).
+
+== Examples of Data Classification
+
+=== NIST 800-53
+The National Institute of Standards and Technology (NIST) created the
+link:https://en.wikipedia.org/wiki/NIST_Special_Publication_800-53[NIST Special Publication 800-53]
+to provide security and privacy controls for U.S. federal information systems.
+
+This document suggests you categorize your data in three levels:
+
+* Low Impact
+* Moderate Impact
+* High Impact
+
+Determine impact level by the amount of damage the disclosure of the data would cause.
+
+=== PCI-DSS
+The Payment Card Industry Data Security Standard (PCI-DSS) is a standard that 
+organizations that handle payment cards (credit and debit) need to follow.
+
+One of the requirements of this standard is that the organization in question "Protects Cardholder Data".
+
+This requirement means that storage and transmission of data such as:
+
+* Name
+* Full card number
+* Security code
+* PIN
+* Contents of the magnetic stripe
+
+Be encrypted and handled in specific ways.
+
+The levels and requirements of your data classification will be determined by what kind
+of data you have and from where it originated.
+

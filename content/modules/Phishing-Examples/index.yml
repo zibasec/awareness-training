@@ -1,0 +1,7 @@
+---
+module_name: Phishing Examples
+module_description: "Phishing Examples: Email Examples and Ways to Detect Phishing"
+module_version: "v1.0.0-rc1"
+
+full_pages:
+  - phishing-examples.adoc

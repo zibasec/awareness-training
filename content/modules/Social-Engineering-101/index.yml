@@ -1,0 +1,8 @@
+---
+module_name: Social Engineering 101
+module_description: "Social Engineering 101: using human nature against us"
+module_version: "v0.0.2"
+
+full_pages:
+  - socialeng-101.adoc
+  - key-principles.adoc

@@ -1,0 +1,7 @@
+---
+module_name: Secure-Microsoft
+module_description: "Securing a Microsoft Outlook.com Email Account"
+module_version: "v0.0.1"
+
+full_pages:
+  - secure-microsoft.adoc

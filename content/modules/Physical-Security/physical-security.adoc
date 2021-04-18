@@ -1,0 +1,73 @@
+---
+submodules:
+ - submodule_name: Physical Security
+   submodule_description: "Physical Security: As important as digital security."
+   submodule_version: "v0.0.1"
+   questions:
+   - prompt: "Physical security does *NOT* help mitigate which of these issues:"
+     type: QUESTION_TYPE_CHOICE
+     choices:
+     - "Espionage"
+     - "Theft"
+     - "Loss"
+     - "Phishing Emails"
+     answer: "Phishing Emails"
+   - prompt: "True or False: Physical security is not as important as digital security?"
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: false
+   - prompt: "True or False: You should plug in a USB stick you found in the parking lot?"
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: false
+---
+
+= Physical Security
+[.lead]
+=====
+Physical security is as important to the overall security of your organization as any other type.
+The best digital security can easily be circumvented if your physical security is compromised.
+=====
+
+== Why Physical Security?
+Physical security as a component of an overall security framework can help mitigate espionage, theft, and loss.
+Physical security is also an essential part of specific compliance frameworks.
+Your organization may have to implement specific physical security policies to meet these compliance frameworks.
+
+== Securing Your Building
+The first thing to look at concerning physical security is the security of your building.
+
+=== Locks and Access Control
+Depending on your compliance needs, you may have to implement access controls to certain areas of your building.
+Often this is done using a digital key card or lock system.
+Some secure areas need multiple factors (a PIN or biometric auth) to operate the lock.
+Key cards by themselves are not a super-secure method for higher security needs.
+
+=== Tailgating
+Tailgating is the act of multiple people entering a secured area on a single key card read.
+Mitigate tailgating by either policy and enforcement or technology, such as a turnstile or laser sensor.
+
+=== Clean Workspace Rules
+A part of some compliance frameworks requires a "Clean Desk Policy".
+A clean desk policy means that any sensitive information or notes need to be cleaned up and secured if there is no person at the desk.
+
+== Other considerations
+Window and desk placement should be such that monitors and desks' contents cannot be observed from outside.
+Additionally, use polarizing filters on windows and screens to obscure secure information.
+
+Use video surveillance to audit security issues, and allow for remote monitoring.
+
+=== USB and Computer Security
+USB thumb drives and other removable media are an avenue of attack.
+A malicious person plants an infected USB storage device in the parking lot or common areas of a victim's workspace.
+The victim plugs in the storage device, and the malware infects the victim's computer allowing a foothold into the network.
+A study by the University of Illinois, Urbana Champaign, University of Michigan, and Google found that 45-98% of people plugged in "Found USB Drives" <<plugusbs: Found Drives, Matthew Tischer, Zakir Durumeric, et al.>>.
+
+Computers that access secure information should have security settings that disable removable media.
+
+Unlocked computers should also not be left unattended.
+Configure a locking screensaver or use some other method to lock computers when not in use.
+
+== References
+[[plugusbs]] Matthew Tischer, Zakir Durumeric, Sam Foster, Sunny Duan, Alec Mori, Elie Bursztein, and Michael Bailey (May 2016). link:https://zakird.com/papers/usb.pdf[Users Really Do Plug in USB Drives They Find] IEEE Symposium on Security & Privacy ("Oakland")
+

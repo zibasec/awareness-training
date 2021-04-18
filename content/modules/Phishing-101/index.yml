@@ -1,0 +1,7 @@
+---
+module_name: Phishing 101
+module_description: "Phishing 101: Basics of Phishing"
+module_version: "v1.0.0-rc1"
+
+full_pages:
+  - phishing-101.adoc

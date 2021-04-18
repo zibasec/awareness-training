@@ -1,0 +1,17 @@
+{%- set bigcount = namespace(value=1) %}
+{%- for mysubmodule in submodules %}
+{% for myquestion in mysubmodule.questions %}
+test.AddQuestion( new Question ("com.scorm.{{ main_org }}.interactions.{{ module_name | replace(' ', '-') }}_{{ bigcount.value }}",
+    "{{ myquestion.prompt }}", 
+    {{ myquestion.type }},
+    {%- if myquestion.choices is iterable %} 
+    new Array({%for mychoice in myquestion.choices %}"{{ mychoice }}"{%- if not loop.last -%},{% endif %}{% endfor %}),
+    {%- else %}
+    null,
+    {%- endif %}
+    "{{ myquestion.answer }}",
+    "obj_{{ module_name | replace(' ', '-') }}")
+    );      
+{% set bigcount.value = bigcount.value + 1 %}
+{%- endfor %}
+{% endfor %}

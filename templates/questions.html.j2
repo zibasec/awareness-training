@@ -1,0 +1,20 @@
+<ol>
+{% for mysubmodule in submodules %}
+{% for myquestion in mysubmodule.questions %}
+  <li>
+    "{{ myquestion.prompt }}", 
+    {{ myquestion.type }},
+    {%- if myquestion.choices is iterable %} 
+    <ul>
+    {%for mychoice in myquestion.choices %}
+      <li>"{{ mychoice }}"</li>
+    {% endfor %}),
+    </ul>
+    {%- endif %}
+    "{{ myquestion.answer }}",
+    "obj_{{ module_name | replace(' ', '-') }}")
+    );      
+  </li>
+{% endfor %}
+{% endfor %}
+</ol>

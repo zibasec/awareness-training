@@ -1,0 +1,113 @@
+---
+submodules:
+ - submodule_name: "Day to Day"
+   submodule_description: "Day to Day Computing Security"
+   submodule_version: "v1.0.0-rc1"
+   questions:
+   - prompt: "Updating software isn't important."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: false
+   - prompt: "All social media games are secure."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: false
+   - prompt: "Which software can you safely disable?"
+     type: QUESTION_TYPE_CHOICE
+     choices:
+     - "Antivirus"
+     - "Security Frameworks"
+     - "Auto Updater"
+     - "None of the above."
+     answer: "None of the above."
+
+
+---
+
+= Day to Day Computing Security
+[.lead]
+====
+As we spend most of our time using computers daily, it's essential to learn some new basic computing safety habits.
+We'll cover some of the simple things you can do to make your day-to-day use of your computer safer.
+====
+
+== Operating System and Software Updates
+Old insecure versions of installed software are a leading cause of computer exploits.
+
+One of the most simple and powerful things you can do to increase your personal computer security is to make sure you are running the latest and greatest software versions.
+Most updates are for fixing software security issues, especially the updates to your operating system(OS).
+These updates will reduce the number of security flaws that attackers can exploit on your system.
+
+Find more details in the "Updates" module of this course.
+
+== OS Level Security features
+In recent years, operating systems designers have added increased security tools and features.
+These security tools help mitigate the damage a piece of exploited software can cause
+
+Keep your operating system's security tools and features running, including:
+
+* Security Software
+  ** link:https://docs.microsoft.com/en-us/windows/security/identity-protection/user-account-control/how-user-account-control-works[Windows UAC]
+  ** link:https://www.redhat.com/en/topics/linux/what-is-selinux[SELinux]
+  ** link:https://wiki.ubuntu.com/AppArmor[AppArmor]
+* Firewalls
+* Antivirus Software
+
+Keeping your system up to date and protecting itself is a tremendous first step you can take.
+
+== Use Only Verified Software
+Installing software from unknown storage devices or downloading software from questionable sites can lead to system compromise.
+You should only install software from trusted known sources.
+
+Look for the software in your operating systems version of an "App Store".
+
+If you install software from third-party sites, verify that you are on the correct site, and check the site's security certificate.
+
+If possible, install only signed software (software verified and security signed by the OS would be ideal).
+
+== Web Browsing Tips
+Securely browsing the web is an essential part of overall computer security.
+Malicious sites, broken or compromised toolbars, and other malware have to get on our systems somehow; coming from a browser is one such path.
+
+Check the SSL/TLS certificates of any site you "log in" to.
+Phishing sites often look *JUST* like the proper site.
+Yes, even phishing sites are using certificates to have you blindly trust that the SSL/TLS certificate is correct.
+
+Use a browser-integrated password manager.
+Browser-integrated password managers will ensure that the username and password are getting pasted into the correct site.
+Password managers reduce the chance that you'll fall for a well-made phishing site.
+
+Use multi-factor authentication (MFA) on all sites that support it.
+Multi-factor authentication will secure your online account by requiring you to submit a second authentication factor other than your password.
+MFA will make your account more secure.
+It may also cause you to distrust a phishing site.
+
+
+== Personal Identifying Information (PII)
+The name of the game for scam artists, attackers, and hackers is personal identifying information or PII.
+
+PII includes things such as your name, address, birth date, and social security number.
+
+Protect your PII by only entering the data that a website needs for you to get the functionality out of it you need.
+For example, your social media accounts most likely do not need your social security number.
+However, you may need to provide your social security number to login into your doctor's web portal.
+
+Be aware of where you post your personal information.
+
+=== Social Media Concerns
+Social media platforms are an attractive target for attackers.
+We put a lot of information into these platforms and don't often think of the consequences.
+
+An interesting angle for attackers to use is the prevalence of "social media gaming".
+These games often require you to allow the game publisher to access your personal information in your social media account.
+Many attacks which stole personal data have used this tactic in the past.
+
+[WARNING]
+.Social Media Games
+====
+Social media games, quizzes, and other "apps" can send your personal information to the game's publisher.
+Double-check the information you are granting to these applications.
+====
+
+The social media platforms have measures to protect their clients, but bad actors are many, which causes issues with enforcement.
+

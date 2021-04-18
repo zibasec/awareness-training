@@ -1,0 +1,7 @@
+---
+module_name: Updates
+module_description: "Updates: Staying Secure"
+module_version: "v0.0.1"
+
+full_pages:
+  - updates.adoc

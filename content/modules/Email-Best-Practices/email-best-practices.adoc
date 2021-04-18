@@ -1,0 +1,92 @@
+---
+submodules:
+ - submodule_name: Email Best Practices
+   submodule_description: "Email: Best Practices."
+   submodule_version: "v0.0.1"
+   questions:
+   - prompt: "True or False: Email should be considered a secure form of communication."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: true
+   - prompt: "True or False: Sandbox scanning can detect malware that your antivirus scanner can't."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: true
+   - prompt: "True or False: Generally speaking, your email account is your most important account."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: true
+   - prompt: "True or False: If you suspect that an email is a phishing attack, you should report it to your IT or Information Security teams."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: true
+
+---
+
+= Email: Best Practices
+[.lead]
+====
+How you use email can significantly impact the security of your organization and your personal privacy.
+The following recommendations will help you stay secure when using email.
+====
+
+== Use Strong Authentication
+Email account compromise (where someone else takes over your email account) is one of the worst things that can happen online.
+It can place everything else at risk.
+Securing access to your email account is one of the most important things you can do.
+
+Recommend:
+
+* Enabling/requiring multi-factor authentication (even if your credentials are compromised, this may protect your account)
+* Using strong passwords or, even better, passphrases (secrets are best if they are long and unpredictable - recommend using a password manager to store and generate credentials)
+* Do not reuse credentials from other accounts (this is an excellent general practice, but for email accounts, it is even more critical)
+
+== Scan All Attachments
+Attackers will frequently attempt to compromise your system by tricking you into opening an attachment (potentially installing malware).
+
+You shouldn't open any attachment (expected or unexpected) without having it scanned for malware).
+Hopefully, your organization scans all inbound email for malware, but it is always a best practice to perform a manual scan of attached files (specifically unexpected email).
+
+If available, use sandbox scanning services.
+They can detect new malware that your standard antivirus might not detect.
+
+== Don't Click on Any Links
+What you see and where a link in an email message takes you can be radically different.
+If you want to check out a site referenced in an email, it is far safer to go to the site independently of any links in an email message.
+
+Even the 'Unsubscribe' link in an email can be malicious.
+
+== Beware of Phishing
+You will be subject to a phishing email attack.
+Always verify any assertions or requests made in an email message.
+Reach out to the person or organization that a message supposedly came from to verify its authenticity before taking any action.
+
+Usually, multiple people within an organization are targeted by a phishing attack.
+Therefore, promptly report any suspicious email messages to your IT or information security teams.
+They could take action to investigate and prevent messages from reaching others.
+
+== Don't use Organizational Email for Personal Use
+Mixing your personal communications with the business's services (like email) could compromise your privacy and increase the organization's risk.
+Companies can read anything you send via their email service.
+If you don't want your boss knowing about something, then keep it clear of company equipment and services.
+
+== Check Your Account Settings Regularly
+One way you can detect a compromised email account is to check the settings.
+If you find unusual settings, you should report them to your IT/Information Security team (preferably not over email).
+
+Some things to look out for:
+
+* Unexpected forwarding rules for inbound messages
+* Unexpected suppression settings that would hide inbound email messages
+* Unexpected changes to your email account credentials
+* Unusual inbox activity - Unexpected messages
+
+== Don't Use Email for Confidential Communication
+By default, email communication is not secure from eavesdropping.
+Email was created a long time ago (when message confidentiality wasn't a general concern).
+There are secure communications tools that work in conjunction with email, but their usage is not as widespread as they should be.
+
+While you might implement something internal to your organization, eventually, the need to share sensitive information outside your organization will arise; in these cases, we recommend finding and using a secure portal service.
+
+Refer to your IT department for suggestions on the proper secure communication platform.
+

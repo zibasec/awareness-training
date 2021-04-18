@@ -1,0 +1,111 @@
+---
+submodules:
+ - submodule_name: Email Attacks
+   submodule_description: "Email Attacks: Deception and Manipulation"
+   submodule_version: "v0.0.1"
+   questions:
+   - prompt: "True or False: You can detect all email attacks by looking for grammatical errors."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: false
+   - prompt: "True or False: Your email account is usually the most important account."
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: true
+   - prompt: "What should you not do to secure your email account?"
+     type: QUESTION_TYPE_CHOICE
+     choices:
+     - "Use multi-factor authentication."
+     - "Click on links you weren't expecting."
+     - "Use strong passwords/passphrases."
+     - "Do not reuse credentials between your email and other accounts."
+     answer: "Click on links you weren't expecting."
+
+---
+= Email Attacks
+The combination of widespread use, ease of creation, and generally weak defenses make email a space rife with deception, manipulation, and fraud.
+Attackers can (with little effort and expense) mount far-reaching and effective attacks using email.
+Humans are the ultimate targets and the most effective line of defense.
+
+== Deception
+Because authentication tools are not widely utilized and the platform enjoys an unearned amount of trust, deception is frequently too easy to accomplish.
+Victims doubt only when given reason, meaning as long as the attacker doesn't raise red flags too blatantly.
+Without these red flags, we are willing to believe most assertions.
+
+For example, the famous Nigerian Prince scams took in far too many people.
+Someone you don't know (and never met) tells you that they need your help and asks you to open bank accounts and deposit checks from financial institutions you haven't investigated.
+
+We must replace trust with doubt.
+If there is anything out of the usual pattern or any inconsistencies, you should challenge and verify them.
+Leaders should not just tolerate their people double-checking but demand it and demonstrate appreciation for doing so.
+
+== Impersonation
+Attackers do their homework.
+Between information available on the organization's website(s), social media, and publicly available government records, attackers have an abundance of available information.
+The chance is that they can recreate your organization's organizational chart with reasonable accuracy.
+If they want to impersonate an external (but real) agency or organization, they have enough information available to create a persona that will mostly 'check out.'
+
+Be wary of unusual requests from people in leadership positions within your organization.
+Reach out to them via different, trusted channels of communication to verify.
+Using out-of-band communication methods should be the standard practice.
+Any request (especially involving money) needs to be independently verified.
+
+== It May Feel Real
+With ever-improving toolsets and tradecraft, attacks are no longer always detectable by spelling mistakes and cheesy graphics.
+While you may still encounter them, don't let your guard down because an email looks legitimate.
+Always take the time to check things out and verify.
+
+== What are they after?
+What are Attackers hoping to achieve?
+
+* Money (a classic objective)
+* Access to confidential information (to use for nefarious purposes)
+* Access (People and systems/infrastructure)
+
+== The Most Common Attack
+Today, the most commonly encountered email attack is phishing.
+Phishing is the practice of sending fraudulent email messages where the attacker impersonates an authority or trusted person/party to get a victim to reveal confidential or personal information.
+Phishing is responsible for a large percentage of security incidents (specifically data breaches) today.
+
+The real target of a phishing attack is a human, email (or other communications channels) are only the delivery method.
+Everyone is vulnerable to being manipulated.
+Almost all approaches try to get you to respond/act before you have an opportunity to think through and apply procedure or critical thinking.
+
+Simply slowing down and following established procedures will do a lot to reduce the probability of falling victim to a phishing attack.
+Contacting the supposed sender via a different, trusted communications channel (internal chat, phone, etc.) before taking action is another powerful way to avoid falling victim.
+
+== The Most Devastating Attack
+Because most of your online life passes through your email account, the compromise and takeover of your email account is - potentially - the most devastating attack.
+Once an attacker has gained access/control over your email account, there is almost no limit to the mischief they can perpetrate.
+Among the many things that could happen, they could use control over your email account to take over other accounts (such as credit card, mortgage, or bank accounts).
+
+[IMPORTANT]
+.Secure your Email
+====
+Your email account can gain or reset access to other accounts such as bank
+or credit card accounts. Securing your email helps protect these linked accounts.
+====
+
+Your email account is the one thing you need to safeguard the most.
+If possible, use multi-factor authentication. You should also use strong, unique passwords/passphrases to secure access to your email account.
+Strong authentication is generally good advice but particularly important for your email account.
+
+== An Emerging Threat
+The Cybersecurity industry has observed a new threat emerging in the last few years, business email compromise.
+Business email compromise is when an attacker gains access to your work email account.
+
+Once an attacker has gained access to your business email account, they can read through your past (and ongoing) email messages and gain powerful insights into you and your organization.
+They can use these insights to launch powerful phishing and financial fraud attacks that people inside your organization are more likely to fall victim to (because it comes from a trusted email address and demonstrates a deep understanding of the organization's culture and business practices).
+
+Once again, the safeguards recommended protecting your email account (strong authentication credentials and practices) and phishing (slow down - follow procedures - independently verify requests) are strongly recommended.
+
+== Malicious Links and Attachments
+One of the most effective ways to bypass an organization's defenses is to attack their humans.
+One approach to doing so is to craft email messages with links to malicious sites/resources or malicious attachments.
+
+If they can infect your machine with malware, they can pivot using your system to attack other resources.
+
+Do not click on links that you didn't expect to receive (even if they seem to come from someone you trust).
+You shouldn't download or open attachments unless you were expecting them.
+If possible, scan the files using your anti-virus or sandbox services.
+

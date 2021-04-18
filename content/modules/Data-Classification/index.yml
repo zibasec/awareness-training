@@ -1,0 +1,7 @@
+---
+module_name: Data Classification and Handling
+module_description: "Data Classification and Handing: Protecting and Using Data"
+module_version: "v0.0.1"
+
+full_pages:
+  - data-classification.adoc

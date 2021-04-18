@@ -1,0 +1,5 @@
+output/
+runtime/.bash_history
+runtime/bash_history
+content/index.adoc
+*.ayml

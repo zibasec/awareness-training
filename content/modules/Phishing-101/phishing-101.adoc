@@ -1,0 +1,69 @@
+---
+submodules:
+ - submodule_name: Phishing 101
+   submodule_description: "Phishing 101: Basics of Phishing"
+   submodule_version: "v1.0.0-rc1"
+   questions:
+   - prompt: "True or False: Spear phishing targets large groups of employees?"
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: false
+   - prompt: "True or False: Email sender addresses can be implicitly trusted?"
+     type: QUESTION_TYPE_TF
+     choices: null
+     answer: false
+   - prompt: "Whaling is phishing targeting which group of employees?"
+     type: QUESTION_TYPE_CHOICE
+     choices:
+     - "High-value: Senior Management, VP, C-Level, HR"
+     - "Janitorial Staff"
+     - "Contractors"
+     - "Family of employees"
+     answer: "High-value: Senior Management, VP, C-Level, HR"
+
+---
+
+= Phishing
+[.lead]
+====
+Phishing is a form of social engineering that attempts to obtain confidential or classified information using deceptive electronic communication forms.
+Commonly the attacker presents themselves as a trusted party to cause the target to give up personal information, usernames, passwords, or credit card numbers.
+====
+
+== Types of Phishing
+Based on the target, phishing can be classified differently:
+
+General Phishing:: Any attempt to gain access to protected data or information.
+Spear Phishing:: Targeting a single individual in a phishing attempt
+Whaling:: Targeting high-value individuals (Senior Management, VP, CEO level)
+
+Spear Phishing targets a specific type of access or data.
+For example, targeting the IT administrator because of the higher-level access they may have, or HR department employees to gain more info on higher-value targets.
+
+Whaling is targeting high-value individuals who may have information that is worth much more.
+For example, the C-Level employees will have access to information that lower-level employees might not have.
+This access and information make the C-Level employees a lucrative target.
+
+== Avenues of Phishing
+Phishing deals with electronic forms of communication, leading to common exploitations by attackers.
+
+Email Spoofing:: Forged E-mail sender addresses.
+Email is an insecure protocol, and spoofed sender addresses are easy to create.
+An email purportedly coming from a known person may be faked.
+
+Instant Messaging:: Posing as a coworker or other trusted party using instant-messaging tools. (either internal to the company or external)
+If an instant message seems to be suspicious, verify the sender is whom they claim to be.
+
+Website Spoofing:: Attackers often gather info by creating a fake site that copies a legitimate site (complete with images).
+Verifying TLS/SSL Certificates and domain names can help defend against these fake sites.
+
+== Website Spoofing Techniques
+Attackers can use the following techniques to trick you into believing a website is legitimate.
+
+* Using JavaScript to change the content of a website.
+* An improperly configured web server can leak information to another site using a Cross-Site-Scripting(XSS) exploit.
+* Using a sub-domain to appear legitimate.
+  ** e.g. `mybank.attacker.example` vs `mybank.example`
+* Using improper HTML anchor targets and descriptions. (the link appears to point in one direction and sends the victim to another
+* URL shorteners commonly hide the destination of malicious links.
+

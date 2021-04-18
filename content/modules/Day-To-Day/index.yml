@@ -1,0 +1,7 @@
+---
+module_name: "Day to Day"
+module_description: "Day to Day Computing Security"
+module_version: "v1.0.0-rc1"
+
+full_pages:
+  - day-to-day.adoc

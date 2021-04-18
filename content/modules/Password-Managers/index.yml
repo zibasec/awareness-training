@@ -1,0 +1,7 @@
+---
+module_name: Password Managers
+module_description: "Password Managers: Improving Security and Usability"
+module_version: "v0.0.1"
+
+full_pages:
+  - password-managers.adoc

@@ -1,0 +1,6 @@
+FROM registry.gitlab.com/goozbach-infra-containers/asciidoctor
+
+RUN dnf -y install ansible python3-pip
+RUN pip install python-frontmatter
+
+WORKDIR /opt/source

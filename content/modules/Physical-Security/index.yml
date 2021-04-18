@@ -1,0 +1,7 @@
+---
+module_name: Physical Security
+module_description: "Physical Security"
+module_version: "v0.0.1"
+
+full_pages:
+  - physical-security.adoc

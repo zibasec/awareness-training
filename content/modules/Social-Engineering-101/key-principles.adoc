@@ -1,0 +1,97 @@
+---
+submodules:
+- submodule_name: Key Principles of Social Engineering
+  submodule_description: "Social engineering 101: Key Principles"
+  submodule_version: "v0.0.1"
+  questions:
+  - prompt: "Which of the Key Principles is most like 'returning the favor'?"
+    type: QUESTION_TYPE_CHOICE
+    choices:
+    - "Reciprocity"
+    - "Commitment"
+    - "Social Proof"
+    - "Obeying Authority"
+    - "Likability"
+    - "Scarcity"
+    - "Unity"
+    answer: "Reciprocity"
+  - prompt: "Authority figures can be explicitly trusted."
+    type: QUESTION_TYPE_TF
+    choices: null
+    answer: false
+---
+
+= Key Principles of Social Engineering
+
+Robert Cialdini wrote a book on the 'key principles of "Influence"<<influence: R. Cialdini>>.
+
+These principles include:
+
+* Reciprocity
+* Commitment
+* Social Proof
+* Obeying Authority
+* Likability
+* Scarcity
+* Unity
+
+The psychology of social engineering can be wrapped in this framework.
+
+== Key Principle -- Reciprocity
+
+Reciprocity -- aka "Returning the Favor".
+
+Reciprocity is used in a social engineering attack by offering a small gift or concession to a target and asking the target to do something to reciprocate (such as change a password or open a locked door).
+
+Another way to use reciprocity is to ask a considerable favor which the target declines to do. At this point, the attacker asks a smaller favor (their real goal) and the target can feel compelled to reciprocate on the concession of backing off the original favor.
+
+== Key Principle -- Commitment
+Commitment -- aka "I want to sign up later".
+
+When people commit to a future action or goal, they are more likely to follow through with that action.
+
+Creators of web popups use this tactic "I'll sign up later" instead of "Cancel" or "No Thanks".
+
+== Key Principle -- Social Proof
+Social Proof -- aka "Everyone is doing it".
+
+People will conform to what they see other people doing.
+
+Are all of the other employees shirking security training?
+
+What kinds of behavior around security practices are challenging because of your corporate culture?
+
+== Key Principle -- Obeying Authority
+Obeying Authority -- aka "This authoritative person told me to".
+
+Obedience to authority figures is ingrained in many cultures.
+
+Often security is compromised by submitting to false authority figures.
+
+[IMPORTANT]
+.Verify Requests from Authority Figures
+====
+One should always verify any request purported to have come from a VIP.
+====
+
+== Key Principle -- Likability
+Likability -- aka "I'm more likely to help you if I like you."
+
+Commonly security standards are overridden for attackers when asked nicely; this is doubly true with the attacker is "nice" or likable.
+
+== Key Principle -- Scarcity driven
+Scarcity -- aka "Limited Time Offer"
+
+A simple way to get people to lower their guard is to offer something with scarcity.
+Implying something is scarce leads to people taking action without fully thinking about the consequences.
+
+Attackers can use this to make you click a link or install software which you shouldn't.
+
+== Key Principle -- Unity
+Unity -- aka "The more alike we are, the more trusting we are".
+
+Attackers will often prey upon our similarities: "Hey, we both have crazy bosses, I need your help, or he's gonna chew me out!"
+
+== References
+[[influence]] Cialdini, Robert (2009). Influence: Science and Practice. Boston, MA: Pearson Education. ISBN 0-205-60999-6.
+
