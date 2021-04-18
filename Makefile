@@ -86,17 +86,17 @@ output/index.html: Makefile content/modules/*/*.adoc
 	( /usr/bin/echo -e "== List of all modules\n\n"; for myindex in $$(find output/modules/*/ -mindepth 1 -maxdepth 1 -iname 'index.html'); do   echo ". link:$${myindex#*output/}[$$(echo $${myindex#*output/} | cut -d '/' -f 2)]"; done ) | asciidoctor $(ASCIIDOC_COMMON_ARGS) -b html5 -d article -o $@ -
 
 output/full.html: Makefile content/modules/*/*.adoc
-	( /usr/bin/echo -e "= ZibaSec Open Source Training\n\n:leveloffset: +1\n\n"; for myadoc in $$(find content/modules/*/ -mindepth 1 -maxdepth 1 -iname '*.adoc'); do   echo -e "include::$${myadoc}[]\n\n"; done ) | asciidoctor $(ASCIIDOC_COMMON_ARGS) -b html5 -d article -o $@ -
+	( /usr/bin/echo -e "= Open Awareness Training\n\n:leveloffset: +1\n\n"; for myadoc in $$(find content/modules/*/ -mindepth 1 -maxdepth 1 -iname '*.adoc'); do   echo -e "include::$${myadoc}[]\n\n"; done ) | asciidoctor $(ASCIIDOC_COMMON_ARGS) -b html5 -d article -o $@ -
 
 output/full.pdf: Makefile content/modules/*/*.adoc
-	( /usr/bin/echo -e "= ZibaSec Open Source Training\n\n:leveloffset: +1\n\n"; for myadoc in $$(find content/modules/*/ -mindepth 1 -maxdepth 1 -iname '*.adoc'); do   echo -e ":imagesdir: $${myadoc%/*}\ninclude::$${myadoc}[]\n\n"; done ) | asciidoctor-pdf $(ASCIIDOC_COMMON_ARGS) -b pdf -d book -o $@ -
+	( /usr/bin/echo -e "= Open Awareness Training\n\n:leveloffset: +1\n\n"; for myadoc in $$(find content/modules/*/ -mindepth 1 -maxdepth 1 -iname '*.adoc'); do   echo -e ":imagesdir: $${myadoc%/*}\ninclude::$${myadoc}[]\n\n"; done ) | asciidoctor-pdf $(ASCIIDOC_COMMON_ARGS) -b pdf -d book -o $@ -
 
 output/%.html: content/%.adoc Makefile
 	@echo ======= per-page ========
 	bin/makefull $@
 
 output/style_guide.html: docs/style_guide.adoc
-	asciidoctor $(ASCIIDOC_COMMON_ARGS) -b html5 -d article -o $@ -v $< 
+	asciidoctor $(ASCIIDOC_COMMON_ARGS) -b html5 -d article -o $@ -v $<
 
 # target for javascript format of questions (for inclusion in SCORM content)
 output/%/questions.js: content/%/*.adoc Makefile templates/questions.js.j2 static/shared/assessmenttemplate.html

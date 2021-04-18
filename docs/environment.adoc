@@ -1,5 +1,5 @@
-= ZOST Containeried Build Environment
-To help package the build environment for the ZibaSec Open Source Training, we are leveraging containerization.
+= Open Awareness Training (OpenAT) Containeried Build Environment
+To help package the build environment for Open Awareness Training (OpenAT), we are leveraging containerization.
 
 == Build dependancies
 On the machine which will be running this container you need to have the following installed.
@@ -13,7 +13,7 @@ On the machine which will be running this container you need to have the followi
 * Python3
 * GNU Make
 
-== Building ZOST Container
+== Building OpenAT Container
 To build and push the container to a registry you have push access to:
 
 [source,bash]
@@ -24,14 +24,14 @@ bin/buildenv
 
 This builds the container locally and pushes a copy to the tag in `${FULLTAG}`.
 
-== Running the ZOST Container
+== Running the OpenAT Container
 The makefile targets which build the courseware need to run *INSIDE* the container's context.
 
 Here's how you start the environment and render the content:
 
 [source,bash]
 ----
-export FULLTAG=registry.example.com/user/zost
+export FULLTAG=registry.example.com/user/OpenAT
 bin/runenv
 [root@73d277417335 source]# make
 <lots of output and course is rendered in output/ folder>

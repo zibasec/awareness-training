@@ -1,4 +1,4 @@
-= ZibaSec Open Source Training (ZOST)  Style Guide
+= OpenAT Style Guide
 
 == Content Examples
 
